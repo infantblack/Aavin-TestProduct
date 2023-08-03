@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
+import CompanyHeader from './components/layout/header';
+import HomeScreen from './components/pages/companycomponents';
+import CompanyCreation from './components/pages/companycomponents/companycreation';
+import CompanyDetails from './components/pages/companycomponents/companydetails';
+import WelcomePage from './components/welocmepage';
 
 function App() {
+
+  const pathRoute: any = window.location.pathname;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<WelcomePage />} />
+          <Route path="/home" element={<HomeScreen />} />
+          <Route path="/companycreate" element={<CompanyCreation />} />
+          {/* <Route path="/details" element={<CompanyDetails />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
