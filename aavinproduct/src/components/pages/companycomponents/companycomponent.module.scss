@@ -1,0 +1,230 @@
+.tabnavlist {
+    background-color: white;
+}
+
+.tabiconposi {
+    align-items: center;
+}
+
+.listscrn {
+    background-color: #eef5ef;
+    height: 84.5vh;
+}
+
+.tabletitle {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4bc258;
+    padding: 14px 30px;
+    align-items: center;
+    span {
+        &.companyTitle {
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 3px solid #000;
+        }
+    }
+}
+
+.createbtn {
+    background-color: #1d2e39;
+    color: #fff;
+    box-shadow: none;
+    height: 43px;
+    border-radius: 10px;
+    border: 33px;
+    margin-left: 65%;
+
+}
+
+.createtext {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+.overallSec {
+
+    // height: 100vh;
+    .cmpycrtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    .mapArea {
+        width: 100%;
+        width: 700px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .arrowbck {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin-right: auto;
+        background-color: green;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proUpld {
+        background-image: url("../../../styles/images/backgrd.jpeg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+    // .uploadArea{
+    //     border-radius: 100px;
+    // }
+    .imgdfut{
+        border-radius: 200px;
+    }
+}
+
+
+.buttoncontainer {
+    position: relative;
+  }
+  
+  .button2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 10px; /* Adjust this value to control the distance between the buttons */
+  }
+
+  .detailsScreen {
+    border: 1px solid grey;
+    margin: 30px;
+    background-color: #fff;
+    .detailsTop {
+
+        .searchBar {
+            background-color: #4bc258;
+            display: flex;
+            justify-content: end;
+            padding: 20px 30px;
+            input {
+                width: 200px;
+            }
+        }
+        .detailsHeader {
+            background-image: url(../../../styles/images/bgmilk.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            .headerContent {
+                display: flex;
+                align-items: end;
+                justify-content: space-evenly;
+                height: 55px;
+                background: #4bc258;
+                margin-top: auto;
+                padding: 15px 0px;
+                .progileLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                    }
+                    .addressArea {
+                        .address {
+                            color: #fff;
+                            display: block;
+                            width: 250px;
+                            margin-bottom: 30px;
+                            b {
+                                font-size: 18px;
+                                font-weight: bold;
+                                display: block;
+                            }
+                            span {
+                                font-size: 12px;
+                                font-weight: normal;
+                            }
+                        }
+                        .phone {
+                            span {
+                                font-size: 14px;
+                                font-weight: normal;
+                                color: #000;
+                                display: flex;
+                                &:nth-child(2) {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .phicon{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                   
+                }
+                .companyEmail {
+                    span {
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: #000;
+                        display: flex;
+                        &:nth-child(2) {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .companyLocation {
+                    font-size: 18px;
+                    font-weight: bold;
+                    a{
+                     color: #000;   
+                    }
+                }
+            }
+        }
+    }
+    .detailsRow {
+        border: 1px solid grey;;
+        margin: 30px;
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        .detailsArea {
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: normal;
+                &:nth-child(2) {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+  }
+
+  .textal{
+    color: #fff;
+  }

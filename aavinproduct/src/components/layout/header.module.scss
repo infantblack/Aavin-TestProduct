@@ -1,0 +1,23 @@
+.header {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #4bc258;
+}
+
+.cmpylogo{
+    height: 76px;
+    img {
+        width: 350px;
+    }
+}
+
+.profileAvtr {
+    margin-left: auto;
+    margin-right: 30px;
+}
+.badges {
+    margin-right: 10px;
+}
